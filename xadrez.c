@@ -16,14 +16,11 @@
     }
 
 
-    void mover_bispo(int casa_bispo){ // recursividade Bispo
-        if (casa_bispo > 0)
-{
+    void mover_bispo() // recursividade Bispo
+
+        { 
            printf("Direita)\n");
-           mover_bispo(casa_bispo - 1);
         }
-        
-    }
 
 
 
@@ -83,10 +80,7 @@ int main() {
 
         for (int p = 0; p < 1; p++)
         {
-        
-            char quantidade_2 = 1; 
-            mover_bispo(quantidade_2);
-
+         mover_bispo();
         }
     
     }
